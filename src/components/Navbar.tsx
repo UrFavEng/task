@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import Dropdown from "./DropDwon";
 
 const Navbar = () => {
   return (
@@ -7,14 +8,17 @@ const Navbar = () => {
       <div className="mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <button className="bg-[#151F29]  text-[#FAF4EF]  h-10 px-12 rounded-md  shadow-sm">
+            <button className="bg-[#151F29] hidden lg:block  text-[#FAF4EF]  h-10 px-8 xl:px-12 rounded-md  shadow-sm">
               تواصل معنا{" "}
             </button>
+            <div className="flex lg:hidden items-center gap-4">
+              <Image alt="" height={70} width={70} src={"/logo.png"} />
+            </div>
           </div>
 
-          <div className="md:flex md:items-center md:gap-12">
-            <nav aria-label="Global" className="hidden md:block">
-              <ul className="flex text-black font-semibold items-center flex-row-reverse gap-6 text-sm">
+          <div className="md:flex md:items-center md:gap-7 lg:gap-10 xl:gap-12">
+            <nav aria-label="Global" className="hidden lg:block">
+              <ul className="flex text-black font-semibold items-center flex-row-reverse gap-3 lg:gap-4 xl:gap-6 text-sm">
                 <li>
                   <a className=" transition hover:text-gray-500/75" href="#">
                     الرئيسية
@@ -71,7 +75,14 @@ const Navbar = () => {
             </nav>
 
             <div className="flex items-center gap-4">
-              <Image alt="" height={70} width={70} src={"/logo.png"} />
+              <Image
+                alt=""
+                height={70}
+                width={70}
+                src={"/logo.png"}
+                className=" hidden lg:block"
+              />
+              <Dropdown />
             </div>
           </div>
         </div>

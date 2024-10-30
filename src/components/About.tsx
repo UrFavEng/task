@@ -16,15 +16,15 @@ const About = () => {
   }, []);
 
   return (
-    <div className="container flex-row-reverse mx-auto flex items-center justify-center gap-20 pt-16">
+    <div className="container flex-col lg:flex-row-reverse mx-auto flex items-center justify-center gap-5 md:gap-20 pt-16">
       {activeIndex == 0 && (
         <>
           {" "}
-          <div className={"w-[50%]"}>
-            <h2 className=" mb-4 text-right font-medium text-[36px] text-[#172029]">
+          <div className={"lg:w-[50%]"}>
+            <h2 className=" px-4 md:px-0 mb-4 text-right font-medium text-[36px] text-[#172029]">
               رحلة ليزا فراج{" "}
             </h2>
-            <p className=" text-[20px] text-right text-[#5F5F5F]">
+            <p className=" px-4 md:px-0 text-[20px] text-right text-[#5F5F5F]">
               عملت ليزا لسنوات في البنوك، قبل أن تقرر تغيير مسارها المهني، حيث
               اتخذت قرارًا جريئًا بالانتقال من العمل المصرفي إلى العمل كمدربة
               رياضية للأطفال. وافتتحت أيضًا كوفي شوب صغير للمأكولات والمشروبات
@@ -40,7 +40,7 @@ const About = () => {
       {activeIndex == 1 && (
         <>
           {" "}
-          <div className={"w-[50%]"}>
+          <div className={"lg:w-[50%]"}>
             <h2 className="mb-4 text-right font-medium text-[36px] text-[#172029]">
               ما يميز ليزا فراج
             </h2>
@@ -56,7 +56,7 @@ const About = () => {
           </div>
         </>
       )}{" "}
-      <div className="relative w-[50%] h-[580px]">
+      <div className="relative mx-auto w-[90%] sm:w-[80%] lg:w-[50%] h-[580px]">
         <img
           src={images[activeIndex]}
           alt="Large Image"
@@ -69,7 +69,7 @@ const About = () => {
         <img
           src={images[activeIndex === 0 ? 1 : 0]} // استخدم الصورة الثانية عند تفعيل الصورة الكبيرة
           alt="Small Image"
-          className={`absolute rounded-xl border-2 shadow-lg top-[20%] translate-y-[-50%] right-[-40px] w-72 h-72 object-cover transition-transform duration-700 ease-in-out ${
+          className={`absolute rounded-xl border-2 shadow-lg top-[20%] translate-y-[-50%] right-0 md:right-[-40px] w-72 h-72 object-cover transition-transform duration-700 ease-in-out ${
             activeIndex === 0 ? "scale-75 " : "scale-100 "
           }`}
           style={{

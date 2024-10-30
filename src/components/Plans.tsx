@@ -123,7 +123,7 @@ const Plans = () => {
           </div>
           <div>
             {" "}
-            <div className=" flex items-end gap-3 lg:gap-5 flex-col mt-10">
+            <div className=" flex items-end gap-2 sm:gap-3 lg:gap-5 flex-col mt-10">
               <p className=" text-[#5F5F5F] text-right flex items-center gap-2 flex-row-reverse">
                 <img src="/true.png" alt="" className=" mt-1.5" />
                 مقاطع فيديو للتمارين تترواح بين 3 الى 6 ايام{" "}
@@ -181,7 +181,7 @@ const Plans = () => {
           </div>
           <div>
             {" "}
-            <div className=" flex items-end gap-7 flex-col mt-10">
+            <div className=" flex items-end gap-6 sm:gap-7 flex-col mt-10">
               <p className=" text-[#5F5F5F] flex items-center gap-2 flex-row-reverse">
                 <img src="/true.png" alt="" className=" mt-1.5" />
                 فيديوهات رياضه
@@ -190,7 +190,7 @@ const Plans = () => {
                 <img src="/true.png" alt="" className=" mt-1.5" />
                 جدول غذائي بناء على اهدافك{" "}
               </p>
-              <p className=" text-[#5F5F5F] flex items-center gap-2 flex-row-reverse">
+              <p className=" text-right text-[#5F5F5F] flex items-center gap-2 flex-row-reverse">
                 <img src="/true.png" alt="" className=" mt-1.5" />
                 جدول مكملات غذائيه بناء على اهدافك
               </p>
