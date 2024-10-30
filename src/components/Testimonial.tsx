@@ -19,7 +19,7 @@ const Testimonial = () => {
         >
           قم بمشاركة رايك معنا{" "}
         </button>
-        <div className=" gap-6 lg:gap-2.5 mt-8 flex flex-col lg:flex-row-reverse items-center lg:items-start justify-between ">
+        <div className=" gap-6 lg:gap-2.5 mt-8 flex flex-col lg:flex-row-reverse items-center lg:items-center justify-between ">
           <div className="basis-[73%] h-full py-6  bg-[#F8F8F8] rounded-lg">
             <div className=" h-full flex gap-4 md:gap-0 md:items-center flex-col md:flex-row-reverse">
               <div className=" basis-[68%]">
