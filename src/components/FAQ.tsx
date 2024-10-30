@@ -6,11 +6,11 @@ const FAQ = () => {
       <h2 className=" text-center pt-12  font-medium text-[36px] text-[#172029]">
         الاسئله الشائعه
       </h2>
-      <p className=" text-[#818181] mt-2 text-center">
+      <p className=" text-[#818181] px-2.5 md:px-0 mt-2 text-center">
         لاسئله لاكثر شيوعا بين مرتادي الموقع , للاجابه عن اي سوال يتبادر الى
         ذهنك خاص باالصحه لا تتردد بطرحه{" "}
       </p>
-      <div className=" container mx-auto flex items-start py-8 gap-4">
+      <div className=" container mx-auto flex-col px-4 md:px-0 md:flex-row flex items-start py-8 gap-4">
         <div className="space-y-4 basis-[48%]">
           <details className="group bg-gradient-to-r rounded-xl from-[#79C6CE] to-[#B4E0C9] transition-all ease-in-out bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
             <summary className="flex cursor-pointer items-center justify-between gap-1.5 flex-row-reverse">

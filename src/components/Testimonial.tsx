@@ -8,20 +8,20 @@ const Testimonial = () => {
       <img
         src="/wave.svg"
         alt=""
-        className=" absolute top-[-45px] right-0 w-full"
+        className=" absolute top-[-45px] right-0 w-0 md:w-full"
       />
       <div>
-        <h2 className=" font-medium text-[36px] text-right  text-[#172029]">
+        <h2 className=" px-4 md:px-0 font-medium text-[28px] md:text-[36px] text-right  text-[#172029]">
           اراء المشتركين{" "}
         </h2>
         <button
-          className={`relative  mt-2.5 text-right z-10 p-4 rounded-lg transition-all duration-300 ${"text-white bg-gradient-to-r from-[#79C6CE] to-[#B4E0C9]"}`}
+          className={`relative mr-4 md:mr-0 mt-2.5 text-right z-10 px-3.5 py-3 text-[#151F29] md:p-5 rounded-lg transition-all duration-300 ${" bg-gradient-to-r from-[#79C6CE] to-[#B4E0C9]"}`}
         >
           قم بمشاركة رايك معنا{" "}
         </button>
-        <div className=" gap-2.5 mt-8 flex flex-row-reverse items-start justify-between ">
+        <div className=" gap-6 md:gap-2.5 mt-8 flex flex-col md:flex-row-reverse items-center md:items-start justify-between ">
           <div className="basis-[73%] h-full py-6  bg-[#F8F8F8] rounded-lg">
-            <div className=" h-full flex items-center flex-row-reverse">
+            <div className=" h-full flex gap-4 md:gap-0 md:items-center flex-col md:flex-row-reverse">
               <div className=" basis-[68%]">
                 <h2 className=" font-bold text-[24px] text-[#172029] text-right p-4">
                   {" "}
@@ -35,7 +35,7 @@ const Testimonial = () => {
                     className=" text-left"
                   />
                 </div>{" "}
-                <p className=" pr-8 font-light text-[18px]  pl-20 text-right">
+                <p className=" pr-8 font-light text-[18px]  md:pl-20 text-right">
                   شكرا لاعظم كوتش واجمل كوتش ليزا التمرينه كانت عظيمه جدا جدا
                   وممتازه وفعلا حسيت بتحسن في ظهري بشكل ملحوظ وكبير جدا{" "}
                 </p>
@@ -50,7 +50,7 @@ const Testimonial = () => {
               </div>
             </div>
           </div>
-          <div className=" flex items-start basis-[27.5%]">
+          <div className=" flex items-start w-[325px] md:basis-[27.5%]">
             <video
               controls
               src="/video.mp4"

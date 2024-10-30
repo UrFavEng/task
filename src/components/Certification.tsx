@@ -27,19 +27,19 @@ const Certification = () => {
           backgroundPosition: "center", // center the image
         }}
       ></div>
-      <div className=" flex justify-between  items-center flex-row-reverse">
+      <div className=" flex justify-between py-8  items-center flex-col gap-8 lg:gap-0 lg:flex-row-reverse">
         <div>
-          <h1 className=" text-right font-medium text-[36px] text-black">
+          <h1 className=" text-right font-medium text-[24px] md:text-[36px] text-black">
             الشهادات
           </h1>
-          <p className="  font-light text-[20px] text-right">
+          <p className="  font-light text-[18px] md:text-[20px] text-right">
             نقدم لك مجموعة من الشهادات التي تعكس التزامنا بالاحترافية والجودة في
             مجال التدريب الرياضي.{" "}
           </p>
-          <h4 className=" text-[28px] text-right mt-4">
+          <h4 className=" text-[20px] md:text-[28px] text-right mt-4">
             شهادة مدرب معتمد من الاتحاد الدولي للياقة البدنية (IFPA)
           </h4>
-          <p className=" font-light text-[24px] text-right">
+          <p className=" font-light text-[16px] md:text-[24px] text-right">
             هذه الشهادة تؤهل المدرب لتقديم برامج تدريبية متخصصة وآمنة.
           </p>
         </div>
