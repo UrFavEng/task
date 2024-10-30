@@ -24,7 +24,7 @@ const Dropdown = () => {
   }, []);
 
   return (
-    <div className="relative inline-block" ref={dropdownRef}>
+    <div className="relative inline-block  lg:hidden " ref={dropdownRef}>
       <button
         title="bttnn"
         onClick={() => setIsOpen(!isOpen)}
